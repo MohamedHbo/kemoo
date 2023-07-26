@@ -1,0 +1,107 @@
+ * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      min-height: 100vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(download.jpg);
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
+
+    .home {
+      color: white;
+      font-size: 50px;
+      font-family: "Arial", sans-serif; /* تغيير الخط حسب رغبتك */
+      font-weight: bold;
+      text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+    }
+
+ .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      padding: 10px 20px;
+        width: 500px;;;
+      background-color: rgba(205, 92, 92, 0.5); 
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px; 
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .button:active {
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+    
+
+      /* تغيير لون الخلفية عند الضغط على الزر */
+.button:active {
+  background-color:white; /* اختر لونًا يناسب التصميم الخاص بك */
+  transition: background-color 0.2s ease; /* تأثير الانتقال */
+}
+
+    .arrow {
+      margin-left: 10px;
+    }
+
+  .details {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .drink {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .drink img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .drink p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+ .details {
+      display: none;
+    }
+    /* Show the details list when the class is removed */
+    .details:not(.hidden) {
+      display: block;
+    }
+
+@keyframes animate{
+
+    0%{
+        background-position-x: 0rem;
+    }
+
+    100%{
+        background-position-x: 100rem;
+    }
+
+}
